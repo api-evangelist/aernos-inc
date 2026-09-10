@@ -1,0 +1,135 @@
+generated: '2026-09-10'
+method: probed
+source: https://www.aernos.com/
+name: AerNos well-known + contract discovery probe
+description: >-
+  NEGATIVE probe record for AerNos, Inc. Every host this record knows was probed on 2026-09-10 and
+  NONE of them is reachable, so no /.well-known/ document, agent card, llms.txt or machine-readable
+  contract could be retrieved — not because the paths 404, but because no TCP/HTTP conversation is
+  possible at all. NO WellKnown, SecurityTxt, AgentCard, LLMsTxt, MCPServer or OpenAPI pointer is
+  emitted from this probe, and none should ever be emitted from it in a later round. This file
+  documents an ABSENCE; it is not evidence that AerNos serves any of these surfaces.
+
+host_status:
+  registrable_domain: aernos.com
+  disposition: dark
+  controlled_by_provider: true
+  registrar: Network Solutions, LLC
+  domain_created: '2016-08-29'
+  domain_updated: '2026-06-30'
+  domain_expires: '2027-08-29'
+  nameservers:
+  - pdns13.domaincontrol.com
+  - pdns14.domaincontrol.com
+  mx:
+  - aernos-com.mail.protection.outlook.com
+  a_records: []
+  note: >-
+    The zone is live and still the company's — NS answer, SOA serial 2025030101, and Microsoft 365
+    MX records are present, and LinkedIn still lists http://www.AerNos.com as the company website —
+    but there is no A record on the apex or on www, so every HTTPS request fails at DNS resolution.
+    The last Internet Archive capture of https://www.aernos.com/ is 2025-02-15. The domain has NOT
+    been re-registered by an unrelated party, so this is a withdrawn site rather than a parked or
+    hijacked one.
+
+soft_200_catch_all: false
+soft_200_note: >-
+  No 200 of any kind was observed on any host, so there is no soft-404 or SPA-shell false-positive
+  risk in this record. Every row below is a hard transport failure.
+
+contract_discovery:
+  performed: '2026-09-10'
+  openapi_found: false
+  graphql_found: false
+  mcp_found: false
+  agent_card_found: false
+  asyncapi_found: false
+  wsdl_found: false
+  grpc_found: false
+  ogc_found: false
+  note: >-
+    STEP 0b was run against every host below. There is no API baseURL, no OpenAPI servers[] block and
+    no docs/console host on record for AerNos, so the probe set was applied to the registrable domain,
+    www, and the product domain aerband.com. All failed at the transport layer. Separately, the
+    company's GitHub organization (https://github.com/AerNos-Inc, HTTP 200) holds three public repos —
+    rigablue, mit-deep-learning and esp-idf — and ALL THREE ARE FORKS of third-party projects
+    (Rigado, MIT, Espressif), with no first-party AerNos code, SDK or specification in any of them.
+    npm, PyPI, RubyGems and crates.io return no AerNos package.
+
+hosts:
+- host: aernos.com
+  reachable: false
+  failure: dns-nxdomain
+  note: No A record; resolution fails before any HTTP request is made.
+  documents:
+  - {path: /.well-known/security.txt, status: 0, file: null}
+  - {path: /.well-known/openid-configuration, status: 0, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 0, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 0, file: null}
+  - {path: /.well-known/api-catalog, status: 0, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 0, file: null}
+  - {path: /.well-known/agent-card.json, status: 0, file: null}
+  - {path: /.well-known/agent.json, status: 0, file: null}
+  - {path: /llms.txt, status: 0, file: null}
+  - {path: /openapi.json, status: 0, file: null}
+- host: www.aernos.com
+  reachable: false
+  failure: dns-nxdomain
+  note: No A record; resolution fails before any HTTP request is made.
+  documents:
+  - {path: /.well-known/security.txt, status: 0, file: null}
+  - {path: /.well-known/openid-configuration, status: 0, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 0, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 0, file: null}
+  - {path: /.well-known/api-catalog, status: 0, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 0, file: null}
+  - {path: /.well-known/agent-card.json, status: 0, file: null}
+  - {path: /.well-known/agent.json, status: 0, file: null}
+  - {path: /llms.txt, status: 0, file: null}
+  - {path: /openapi.json, status: 0, file: null}
+- host: aerband.com
+  reachable: false
+  failure: connection-reset
+  note: >-
+    Resolves to 52.38.151.165 (AWS us-west-2) on the same nameservers as aernos.com, so it is the
+    company's domain, but TCP 443 resets the connection and TCP 80 times out — both ports are
+    closed. A stale address record pointing at an instance that no longer serves.
+  documents:
+  - {path: /.well-known/security.txt, status: 0, file: null}
+  - {path: /.well-known/openid-configuration, status: 0, file: null}
+  - {path: /.well-known/oauth-authorization-server, status: 0, file: null}
+  - {path: /.well-known/oauth-protected-resource, status: 0, file: null}
+  - {path: /.well-known/api-catalog, status: 0, file: null}
+  - {path: /.well-known/ai-plugin.json, status: 0, file: null}
+  - {path: /.well-known/agent-card.json, status: 0, file: null}
+  - {path: /.well-known/agent.json, status: 0, file: null}
+  - {path: /llms.txt, status: 0, file: null}
+  - {path: /openapi.json, status: 0, file: null}
+
+subdomain_probe:
+  method: dns
+  result: all-nxdomain
+  checked:
+  - api.aernos.com
+  - cloud.aernos.com
+  - data.aernos.com
+  - portal.aernos.com
+  - developer.aernos.com
+  - docs.aernos.com
+  - dev.aernos.com
+  - api.aerband.com
+  - data.aerband.com
+  - cloud.aerband.com
+  - app.aerband.com
+
+historical_api_claim:
+  claim: organizational access to data via the AerBand Data Cloud Auto API
+  source: https://www.aernos.com/products/ (via Internet Archive, capture 2024-06-01)
+  assessment: >-
+    This single marketing clause on the AerBand product page is the ONLY reference to an API anywhere
+    on AerNos's published or archived web surface. No developer portal, API reference, base URL,
+    authentication documentation, SDK or machine-readable specification accompanied it in any capture.
+    The related commerce listing was an "Annual Subscription to Cloud Data Services" priced at
+    $12.00/year in the site's WooCommerce store — an end-user data subscription, not a developer
+    product. Recorded here for provenance only; it does not constitute a discoverable API surface and
+    no pointer is derived from it.
