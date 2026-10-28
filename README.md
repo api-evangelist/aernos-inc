@@ -64,5 +64,70 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-AerNos is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/aernos-inc_stock/
+AerNos, Inc. is a San Diego, California nanotechnology company founded in 2016 by Sundip Doshi that develops application-specific nano gas sensor modules capable of detecting multiple harmful gases — carbon monoxide, ozone, formaldehyde, nitrogen oxides and other volatile organic compounds — at parts-per-billion concentrations. Its proprietary AerCNT / AerN2S technology combines multi-layer hybrid nanostructures, materials science, nanoengineering and predictive analytics into low-power sensor systems intended for plug-and-play integration into third-party smart products. Product lines announced between 2017 and 2021 include AerIoT (an IoT nano gas sensor module and development kit, a CES 2019 Innovation Award Honoree), AerBand (a wearable research unit), AerHome and AerCity (smart-home and smart-city air quality monitors) and SmartAer (a monitoring solution for commercial buildings, industrial sites and schools). Frost & Sullivan named AerNos its 2018 Global Gas Sensor Industry Entrepreneurial Company of the Year. AerNos is a hardware company that never operated a developer program: across its entire published and archived web surface the only mention of an API is a single marketing clause on the products page — "organizational access to data via the AerBand Data Cloud Auto API" — with no developer portal, API reference, base URL, authentication documentation or machine-readable specification of any kind, and its cloud offering was sold as a $12/year WooCommerce "Annual Subscription to Cloud Data Services" rather than as a metered developer product. Its GitHub organization contains only forks of third-party projects. As of September 2026 the company's public web presence is dark — aernos.com serves nameserver and Microsoft 365 mail records but no address record, and aerband.com resolves to an AWS address with no listening web port.
+
+**Areas:** Company · Sensors · IoT · Air Quality · Nanotechnology · Environmental Monitoring · Hardware · Wearables · Smart Home · Smart Cities
+
+## AerNos on APIs.io
+
+Everything profiled for AerNos is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/aernos-inc/](https://apis.io/providers/aernos-inc/)** — or go straight to one of the APIs or properties below.
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.aernos.com/)
+- [GitHub](https://github.com/AerNos-Inc)
+
+## API Evangelist rating
+
+**Kin Score 2.5** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 0.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/aernos-inc/](https://apis.io/providers/aernos-inc/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for AerNos: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/aernos-inc/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
